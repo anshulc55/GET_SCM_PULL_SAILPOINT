@@ -1,5 +1,5 @@
 # GET_SCM_PULL_SAILPOINT
-Temp Repo for Discussion with SailPoint
+
 
 This code retrieves pull requests from a GitHub repository, formats the data, and sends it as an email summary.
 
