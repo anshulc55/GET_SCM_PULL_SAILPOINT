@@ -4,12 +4,11 @@ import smtplib
 from email.mime.text import MIMEText
 
 """
-Use Case :
-Write python code that will use the GitHub API to retrieve a summary of all opened, 
-closed, and in draft pull requests in the last week for a given repository and send 
-a summary email to a configurable email address.
+    Use Case :
+    Write python code that will use the GitHub API to retrieve a summary of all 
+    opened, closed, and in draft pull requests in the last week for a given repository 
+    and send a summary email to a configurable email address.
 """
-
 
 def get_pull_requests(repo_owner, repo_name, token):
     """
@@ -207,7 +206,7 @@ try:
     print(pull_requests[1])
     
     ## Commenting SendEmail Funcation due to unavailability of SMTP Server
-    send_email(email_sender, email_recipient, pull_requests[0], pull_requests[1])
+    # send_email(email_sender, email_recipient, pull_requests[0], pull_requests[1])
     print('Email sent successfully!')
 except Exception as e:
     print(f'Error: {str(e)}')
