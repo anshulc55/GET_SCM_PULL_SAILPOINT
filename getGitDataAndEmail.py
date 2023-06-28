@@ -194,7 +194,7 @@ def send_email(sender, recipient, subject, body):
 # Set repository owner, repository name, GitHub token, email sender, and email recipient
 repo_owner = 'anshulc55'
 repo_name = 'Data_Structure'
-github_token = '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'
+github_token = '**************************'
 email_sender = 'anshulc55@gmail.com'
 email_recipient = '***************'
 
