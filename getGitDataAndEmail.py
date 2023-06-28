@@ -24,7 +24,8 @@ def get_pull_requests(repo_owner, repo_name, token):
     """
     headers = {
         'Authorization': f'Token {token}',
-        'Accept': 'application/vnd.github.v3+json'
+        #'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github+json'
     }
 
     today = datetime.date.today()
@@ -58,7 +59,7 @@ def get_pull_request_details(pull_request, token):
     """
     headers = {
         'Authorization': f'Token {token}',
-        'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github+json'
     }
 
     url = pull_request['url']
@@ -157,7 +158,7 @@ def format_data(repo_owner, repo_name, token):
       {"{backslash_char}n".join(draft_pr_details)}
 
     Thank you,
-    SailPoint CI Team
+    SailPoint DevOps Team
     '''
 
     return subject, body
@@ -193,7 +194,7 @@ def send_email(sender, recipient, subject, body):
 # Set repository owner, repository name, GitHub token, email sender, and email recipient
 repo_owner = 'anshulc55'
 repo_name = 'Data_Structure'
-github_token = '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'
+github_token = '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'
 email_sender = 'anshulc55@gmail.com'
 email_recipient = '***************'
 
