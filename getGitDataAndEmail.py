@@ -187,15 +187,19 @@ def send_email(sender, recipient, subject, body):
 # Set repository owner, repository name, GitHub token, email sender, and email recipient
 repo_owner = 'anshulc55'
 repo_name = 'Data_Structure'
-github_token = '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'
+github_token = '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'
 email_sender = 'anshulc55@gmail.com'
 email_recipient = '***************'
 
 try:
     pull_requests = format_data(repo_owner, repo_name, github_token)
+
+    ## Just Printing the Email Subject and Email Content which sent via Sent Email Funcation
     print(pull_requests[0])
     print("****************")
     print(pull_requests[1])
+    
+    ## Commenting SendEmail Funcation due to unavailability of SMTP Server
     send_email(email_sender, email_recipient, pull_requests[0], pull_requests[1])
     print('Email sent successfully!')
 except Exception as e:
